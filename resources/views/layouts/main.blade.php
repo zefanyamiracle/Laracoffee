@@ -1,3 +1,7 @@
+@php
+  $title = 'Dashboard';
+@endphp
+
 <!DOCTYPE html>
 <html lang="en">
 

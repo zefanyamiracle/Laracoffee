@@ -24,16 +24,15 @@
             <div class="point mx-auto"><sup style="font-size: 4rem; left: 1rem;">
                 {{ auth()->user()->point }}
               </sup>/<sub style="font-size: 4rem; left: -1rem;">50</sub> </div>
-            <p class="lead text-gray-800 mt-3">Your Point</p>
-            <p class="text-gray-500 mb-2 mt-3">Get points every time you buy our products to get free products
+            <p class="lead text-gray-800 mt-3">Poin Anda</p>
+            <p class="text-gray-500 mb-2 mt-3">Dapatkan poin setiap anda memesan produk apapun untuk mendaptkan potongan harga
             </p>
             <form action="/point/convert_point" method="post" id="form_convert_point">
               @csrf
               <button class="btn btn-success text-white mt-5"
-                data-isCanConvert="{{auth()->user()->point >= 50 ? 'true':'false'}}" id="button_convert_point">Convert
-                points to coupons</button>
+                data-isCanConvert="{{auth()->user()->point >= 50 ? 'true':'false'}}" id="button_convert_point">Konversi point sebagai kupon</button>
             </form>
-            <div class="text-muted mt-5" style="font-size: 2rem;">current coupon :
+            <div class="text-muted mt-5" style="font-size: 2rem;">Kupon saat ini :
               {{auth()->user()->coupon}}
             </div>
           </div>

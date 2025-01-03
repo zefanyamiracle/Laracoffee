@@ -1,0 +1,12 @@
+.video-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  
+  .video-container video {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Agar video mengisi kontainer dengan baik */
+  }
+

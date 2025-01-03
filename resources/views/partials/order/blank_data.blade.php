@@ -3,22 +3,22 @@
     <div class="col-lg-6">
       <div class="text-center mt-4">
         <h1 class="display-1">?</h1>
-        <p class="lead">No Data</p>
+        <p class="lead">Tidak ada data</p>
         @if (!isset($is_filtered))
-        <p>No orders right now!</p>
+        <p>Tidak ada pesanan saat ini!</p>
         @else
-        <p>No orders with status {{ $is_filtered }}</p>
+        <p>Tidak ada pesanan dengan status {{ $is_filtered }}</p>
         @endif
 
         @if (auth()->user()->role_id == 2)
         <a href="/product" class="link-info">
           <i class="fas fa-arrow-left me-1"></i>
-          Buy some good product now
+          Pesan kopi nikmat sekarang
         </a>
         @else
         <a href="/order/order_history" class="link-info">
           <i class="fas fa-arrow-left me-1"></i>
-          Wanna check order history?
+          Ingin melihat riwayat pesanan?
         </a>
         @endif
       </div>

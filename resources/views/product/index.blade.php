@@ -21,7 +21,7 @@
         {!! session("message") !!}
         @endif
 
-        <h5 class="section-title h1">Our Product</h5>
+        <h5 class="section-title h1">Produk Kami</h5>
         @can('add_product',App\Models\Product::class)
         <div class="d-flex align-items-end flex-column mb-4">
             <a style="text-decoration: none;" href="/product/add_product">
@@ -53,8 +53,7 @@
                             <div class="card">
                                 <div class="card-body text-center mt-4">
                                     <h4 class="card-title">{{ $row->product_name }}</h4>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Doloremque nam voluptas distinctio facere assumenda delectus.</p>
+                                    <p class="card-text">Dapatkan produk minuman kopi terbaik disini dan daptkan harga spesial saat anda membelinya.</p>
 
                                     <!-- detail -->
                                     <button data-id="{{ $row->id }}"
@@ -62,16 +61,16 @@
 
                                     <!-- ulasan -->
                                     <a href="/review/product/{{ $row->id }}"><button
-                                          class="btn btn-primary btn-sm ubah">Review</button></a>
+                                          class="btn btn-primary btn-sm ubah">Ulasan</button></a>
 
                                     <!-- [admin] ubah -->
                                     @can('edit_product',App\Models\Product::class)
                                     <a href="/product/edit_product/{{ $row->id }}"><button
-                                          class="btn btn-primary btn-sm ubah">Edit</button></a>
+                                          class="btn btn-primary btn-sm ubah">Ubah</button></a>
                                     @endcan
                                     @can('create_order',App\Models\Order::class)
                                     <a href="/order/make_order/{{ $row->id }}"><button
-                                          class="btn btn-primary btn-sm ubah">Buy</button></a>
+                                          class="btn btn-primary btn-sm ubah">Beli</button></a>
                                     @endcan
                                 </div>
                             </div>

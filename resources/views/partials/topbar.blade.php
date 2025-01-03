@@ -1,6 +1,6 @@
 <nav class="sb-topnav navbar navbar-expand navbar-light bg-light">
 
-  <a class="navbar-brand ps-3" href="/home">Laracoffee</i> </a>
+  <h1 class="navbar-brand ps-3" href="/home">Media Veggie Coffee</i> </h1>
 
   <!-- Sidebar Toggle-->
   <button class="btn btn-link btn-light btn-sm order-1 order-lg-0 me-3 me-lg-0" id="sidebarToggle" href="#!"><i
@@ -18,9 +18,9 @@
           src="{{ asset('storage/' . auth()->user()->image) }}"></a>
       <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
         <li><a class="dropdown-item" href="/profile/my_profile"><i class="fas fa-user-alt fa-sm fa-fw text-gray-400"
-              style="margin-right: 10px;"></i>My Profile</a></li>
+              style="margin-right: 10px;"></i>Akun Saya</a></li>
         <li><a class="dropdown-item" href="/profile/change_password"><i class="fas fa-key fa-sm fa-fw text-gray-400"
-              style="margin-right: 10px;"></i>Change Password</a></li>
+              style="margin-right: 10px;"></i>Ubah Kata Sandi</a></li>
         <li>
           <hr class="dropdown-divider" />
         </li>
@@ -28,7 +28,7 @@
           <form action="/auth/logout" method="post" id="form_auth_logout">
             @csrf
             <button type="submit" class="dropdown-item auth_logout" style="cursor: pointer;"><i
-                class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400" style="margin-right: 10px;"></i>Logout</a>
+                class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400" style="margin-right: 10px;"></i>Keluar</a>
           </form>
         </li>
     </li>

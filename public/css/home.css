@@ -2,6 +2,40 @@ body {
     background-color: #fff !important;
 }
 
+/* Styling untuk popup */
+.swal2-popup.custom-popup {
+    background-color: rgba(0, 0, 0, 0.7);  /* Warna hitam dengan transparansi 70% */
+    color: white;  /* Mengubah warna teks menjadi putih agar terlihat jelas */
+    border-radius: 10px;  /* Membulatkan sudut popup */
+}
+
+/* Styling untuk gambar di popup kedua */
+.swal2-image {
+    border-radius: 10px;
+}
+
+/* Styling untuk ikon close */
+.swal2-close.custom-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;  /* Ukuran font ikon close */
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.swal2-close.custom-close-btn:hover {
+    opacity: 1;  /* Menambah opasitas saat hover */
+}
+
+.swal2-close.custom-close-btn:focus {
+    outline: none;  /* Menghapus outline saat fokus */
+}
+
+
 /* Hero home user */
 #hero {
     height: calc(100vh - 56px);
@@ -157,6 +191,7 @@ section {
 }
 
 /* info tambahan */
+/* Mengatur struktur dasar icon-box */
 .services .icon-box {
     padding: 30px;
     position: relative;
@@ -167,28 +202,79 @@ section {
     transition: all 0.3s ease-in-out;
     border-radius: 4px;
     border-bottom: 3px solid #fff;
+    text-align: center; /* Menyelaraskan semua elemen di dalam container */
 }
+
+/* Hover effect pada icon-box */
 .services .icon-box:hover {
     transform: translateY(-5px);
 }
+
+/* Mengatur tampilan judul */
 .services .title {
     font-weight: 700;
+    margin-top: 20px; /* Memberikan jarak antara ikon dan judul */
     margin-bottom: 15px;
-    font-size: 18px;
+    font-size: 20px; /* Ukuran judul lebih besar agar lebih menonjol */
+    color: #333; /* Menyesuaikan warna judul */
 }
+
+/* Mengatur link pada judul */
 .services .title a {
     color: #111;
     text-decoration: none !important;
 }
+
+/* Mengatur tampilan deskripsi */
 .services .description {
-    font-size: 15px;
-    line-height: 28px;
-    justify-content: start !important;
+    font-size: 14px; /* Ukuran font lebih kecil untuk deskripsi */
+    line-height: 24px; /* Menambah jarak antar baris agar lebih mudah dibaca */
+    margin-top: 10px; /* Memberikan jarak antara deskripsi dan judul */
     margin-bottom: 0;
+    color: #555; /* Menyesuaikan warna teks deskripsi */
+    text-align: left; /* Menyelaraskan teks deskripsi ke kiri */
+}
+
+/* Mengatur ukuran dan jarak ikon */
+.services .icon-box .icon {
+    font-size: 50px; /* Ukuran ikon yang pas */
+    margin-bottom: 15px; /* Jarak antara ikon dan judul */
+    line-height: 1;
+}
+
+/* Menambahkan padding untuk responsivitas pada form */
+.services .icon-box .description form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Menambahkan padding pada input dan button di form */
+.services .icon-box .description input {
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    width: 80%;
+    margin-right: 10px;
+}
+
+.services .icon-box .description button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.services .icon-box .description button:hover {
+    background-color: #0056b3;
 }
 .services .icon-box-pink:hover {
     border-color: orange;
 }
 .services .icon-box-cyan:hover {
     border-color: #3fcdc7;
+}
+.services .icon-box-red:hover {
+    border-color: #cd3f3f;
 }

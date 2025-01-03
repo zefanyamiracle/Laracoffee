@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\{AuthController, HomeController, OrderController, PointController, ReviewController, ProductController, ProfileController, RajaOngkirController, TransactionController};
+use App\Http\Controllers\{AuthController, HomeController, BroadcastController, SubscriptionController, OrderController, PointController, ReviewController, ProductController, ProfileController, RajaOngkirController, TransactionController};
 
 /*
 |--------------------------------------------------------------------------
@@ -33,8 +33,6 @@ Route::middleware(['alreadyLogin'])->group(function () {
     Route::post('/auth/register', [AuthController::class, "registrationPost"]);
 });
 
-
-
 // main
 Route::middleware(['auth'])->group(function () {
     // Home
@@ -42,6 +40,13 @@ Route::middleware(['auth'])->group(function () {
         Route::get("/home", "index");
         Route::get("/home/customers", "customers");
     });
+
+    // subscribe
+    Route::post('/subscribe', [SubscriptionController::class, 'subscribe'])->name('subscribe');
+
+    // broadcast
+    Route::get('broadcast', [BroadcastController::class, 'index'])->name('broadcast.index');
+    Route::post('broadcast/send', [BroadcastController::class, 'send'])->name('broadcast.send');
 
     // profile
     Route::controller(ProfileController::class)->group(function () {

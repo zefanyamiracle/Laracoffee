@@ -20,7 +20,7 @@
                             <img id="modal-image" width="70%" class="img-fluid d-block mx-auto" alt="" />
                             <div>
                                 <h3>
-                                    Description
+                                    Deskripsi
                                 </h3>
                                 <div class="content">
                                     <div>
@@ -40,8 +40,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <button class="btn btn-primary btn-xl j mt-4" data-bs-dismiss="modal" type="button"> Back to
-                                Product List</button>
+                            <button class="btn btn-primary btn-xl j mt-4" data-bs-dismiss="modal" type="button"> Kembali ke List Produk</button>
                         </div>
                     </div>
                 </div>

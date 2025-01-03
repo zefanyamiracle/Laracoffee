@@ -13,10 +13,10 @@ $("#button_convert_point").click(function (e) {
 
     if (isValid == "true") {
         Swal.fire({
-            title: "Are you sure?",
-            text: "after this process, your points will be converted as coupon",
+            title: "Apakah anda yakin?",
+            text: "Setelah proses ini, poin kamu akan dikonversikan sebagai kupon",
             icon: "question",
-            confirmButtonText: "Confirm",
+            confirmButtonText: "Konfirmasi",
             cancelButtonColor: "#d33",
             showCancelButton: true,
             confirmButtonColor: "#08a10b",
@@ -26,7 +26,7 @@ $("#button_convert_point").click(function (e) {
                 Swal.fire({
                     position: "center",
                     icon: "success",
-                    title: "Action is in progress",
+                    title: "Sedang dalam proses",
                     showConfirmButton: false,
                     timer: 2000,
                 }).then((_) => {
@@ -41,8 +41,8 @@ $("#button_convert_point").click(function (e) {
         Swal.fire({
             position: "center",
             icon: "error",
-            title: "Your points are not enough",
-            text: "collect 50 points to get 1 coupon",
+            title: "Point kamu tidak cukup!",
+            text: "Kumpulkan 50 point untuk mendapatkan 1 kupon",
             showConfirmButton: false,
             timer: 2000,
         });
